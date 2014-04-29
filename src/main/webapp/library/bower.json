@@ -1,0 +1,48 @@
+{
+  "name": "AiqBiWeb",
+  "appPath": "./public",
+  "version": "0.0.0",
+  "authors": [
+    "Arun Kumar Jain <arunj@mediaiqdigital.com>",
+    "Nisha Soudri <sowdri@mediaiqdigital.com>"
+  ],
+  "description": "A web based BI tool.",
+  "main": "public/js/aiq-bi.js",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/js/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "=1.2.16",
+    "angular-bootstrap": "*",
+    "angular-cache": "1.2.0",
+    "bootstrap": "3.0.1",
+    "bootstrap-datepicker": "*",
+    "d3": "3.3.13",
+    "jquery": "2.0.3",
+    "momentjs": "2.2.1",
+    "nprogress": "0.1.2",
+    "nvd3": "1.1.15-beta",
+    "lodash": "2.4.1",
+    "angular-resource": "=1.2.16",
+    "angular-cookies": "=1.2.16",
+    "angular-route": "=1.2.16",
+    "angular-mocks": "=1.2.16",
+    "bootstrap-multiselect": "https://github.com/davidstutz/bootstrap-multiselect.git",
+    "crossfilter": "https://github.com/square/crossfilter.git#1.3.5",
+    "stringjs": "~1.7.0",
+    "topojson": "1.4.5",
+    "colorbrewer": "http://colorbrewer2.org/export/colorbrewer.js",
+    "summernote": "=0.5.1",
+    "angular-summernote": "*",
+    "font-awesome": "4.0.x",
+    "angular-bootstrap-colorpicker": "=3.0.5",
+    "ng-table": "*",
+    "q-connection-browserify": "git@bitbucket.org:mediaiq/q-connection-browserify.git"
+  }
+}

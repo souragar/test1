@@ -1,0 +1,12 @@
+{
+  "name": "q-connection-browserify",
+  "_release": "40fa75c25a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "40fa75c25a2e07cf3796a75d70586c0d38fa20ac"
+  },
+  "_source": "git@bitbucket.org:mediaiq/q-connection-browserify.git",
+  "_target": "*",
+  "_originalSource": "git@bitbucket.org:mediaiq/q-connection-browserify.git"
+}

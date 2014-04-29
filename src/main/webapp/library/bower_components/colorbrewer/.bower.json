@@ -1,0 +1,12 @@
+{
+  "name": "colorbrewer",
+  "_cacheHeaders": {
+    "Last-Modified": "Fri, 06 Dec 2013 20:06:02 GMT",
+    "Content-Length": "19116",
+    "Content-Type": "application/x-javascript"
+  },
+  "main": "index.js",
+  "_source": "http://colorbrewer2.org/export/colorbrewer.js",
+  "_target": "*",
+  "_originalSource": "http://colorbrewer2.org/export/colorbrewer.js"
+}

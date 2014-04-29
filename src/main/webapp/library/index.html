@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html data-ng-app="AiqBiWeb" data-ng-controller="AppController">
+	<head>
+		<title>MIQ - BI</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<!-- build:css css/style.css -->
+		<link rel="stylesheet" type="text/css" href="./js/vendor/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./js/vendor/nvd3/nv.d3.css">
+		<link rel="stylesheet" type="text/css" href="./js/vendor/bootstrap-datepicker/css/datepicker.css">
+		<link rel="stylesheet" type="text/css" href="./js/vendor/bootstrap-multiselect/css/bootstrap-multiselect.css">
+		<link rel="stylesheet" type="text/css" href="./js/vendor/nprogress/nprogress.css">
+		<link rel="stylesheet" type="text/css" href="./js/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./js/vendor/angular-bootstrap-colorpicker/css/colorpicker.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./js/vendor/summernote/summernote-dist/summernote.css">
+		<link rel="stylesheet" type="text/css" href="./css/nvd3Custom.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<!-- endbuild -->
+	</head>
+	<body bi-background="background">
+		<header ng-hide="hideTopbar" class="navbar navbar-fixed-top bs-docs-nav navbar-default" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="sr-only">
+							Toggle navigation
+						</span>
+						<span class="icon-bar">
+						</span>
+						<span class="icon-bar">
+						</span>
+						<span class="icon-bar">
+						</span>
+					</button>
+					<a href="../" class="navbar-brand">AiQ - BI</a>
+				</div>
+				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" data-bs-navbar>
+					<ul class="nav navbar-nav">
+						<li data-match-route="/workbook/">
+							<a href="#/workbook/list">User</a>
+						</li>
+						<li data-match-route="/dashboard/">
+							<a href="#/dashboard/list">Book</a>
+						</li>
+						<li data-match-route="/report/">
+							<a href="#/report/list">LendRecord</a>
+						</li>
+					</ul>
+				
+							
+				</nav>
+			</div>
+		</header>
+
+		
+		<!-- endbuild -->
+	</body>
+</html>

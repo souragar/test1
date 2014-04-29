@@ -1,0 +1,142 @@
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Add LendRecord</h4>
+      </div>
+      <div class="modal-body">
+      <div class="input-group">
+     UserName
+        <select class="form-control" ng-required="true"  data-ng-model='person' 
+			ng-options="p.name for p in Person track by p.id" name="Username"></select>
+			</td>
+			<td>
+			Book Name
+			<select class="form-control" ng-required="true"  data-ng-model='book' 
+			ng-options="b.name for b in availableBook track by b.id" name="Book Name"></select>
+			Lend Date
+			<input type="text" ng-model='date'/>
+	
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" x-ng-click='push()'>Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Lend Record for {{user}}</h4>
+      </div>
+      <div class="modal-body">
+      <div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Book Record</div>
+  <div class="panel-body">
+  <div class="table-responsive">
+		<table class="table">
+   
+     <th>
+	Book Name
+	</th>
+	<th>
+	Author
+	</th>
+	<th>
+	Lend Date
+	</th> 
+	<tr ng-repeat="lend in userRcrd">
+	
+	<td>	
+	{{lend.book.name}}
+	</td>	
+		<td>	
+	{{lend.book.author}}
+	</td>	
+	<td>	
+	{{lend.date}}
+	</td>
+	
+	
+	</tr>
+
+</table>
+</div>
+</div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" x-ng-click='push()'>Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<td>
+
+</td>
+<td>
+
+<table>
+<td>
+<button class="btn btn-primary btn" data-toggle="modal" data-target="#myModal" x-ng-click='addItem()'>
+      Add User
+    </button>
+    </td>
+    <td>
+<input type="text" ng-model='user'/>
+</td>
+<td>
+<button class="btn btn-primary btn" data-toggle="modal" data-target="#userModal" x-ng-click='searchRecord(user)'>
+      Search User Record
+    </button>
+
+</td>
+
+</table>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Book Record</div>
+  <div class="panel-body">
+  <div class="table-responsive">
+		<table class="table">
+		<th> Username </th>
+		<th> Book </th>
+		<th> Author </th>
+		<th> Date </th>
+		
+			<tr ng-repeat="lend in LendRecord">
+		<td>{{lend.person.name}}</td>
+		<td>{{lend.book.name}}</td>
+		<td>{{lend.book.author}}</td>
+		<td>{{lend.date}}</td>
+		<td>
+				<button type="button" class="btn btn-default btn-xs" x-ng-click='removeLendRecord($index)'>
+				<span class="glyphicon glyphicon-remove"></span> Delete</button>
+				
+			
+				</td>
+		
+				
+			</tr>
+		</table>
+		</div>
+	</div>
+
+		
+		
+			
+
+           
+			
+			
+	
